@@ -1,0 +1,226 @@
+body{
+  background-color: white;
+}
+
+header{
+  position: absolute;
+  width: 100%;
+  z-index: 20;
+}
+
+header .main-navigation{
+  background-color: transparent;
+}
+
+header .main-navigation a{
+  color: white;
+}
+
+.books-banner{
+  display: flex;
+  align-items: center;
+  height: 650px;
+  background:linear-gradient(to right, rgba(131, 131, 131, 0.3), rgba(131, 131, 131, 0.3)), url(../Images/wallpaperbetter-2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+}
+
+.books-banner p{
+  font-size: 50px;
+  margin: 0;
+  width: 60%;
+  color: white;
+}
+
+.books{
+  background-color: white;
+  padding: 30px 40px;
+}
+
+.books .book{
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  margin: 120px 0;
+}
+
+.books .book .book-above{
+  position: relative;
+  z-index: 30;
+  width: 30%;
+  transform: translateX(0%);
+  transition: 1s;
+}
+
+.books .book .book-below{
+  /* display: none; */
+  position: absolute;
+  z-index: 5;
+  width: 25%;
+  opacity: 0;
+  transform: rotateZ(90deg) scale(0);
+  transition: .8s;
+}
+
+.books .book-left .book-below{
+  left: 10%;
+}
+
+.books .book-right .book-below{
+  right: 10%;
+}
+
+.books .book-left .book-item img{
+  transform: rotate(180deg);
+  position: absolute;
+  z-index: 5;
+  width: 300px;
+  /* bottom: -15%; */
+  bottom: -20%;
+  /* left: calc(76% + 70px); */
+  left: calc(80% + 70px);
+}
+
+.books .book-left .book-item #Book-flor_3{
+  transform: rotate(180deg);
+  width: 200px;
+  /* bottom: -40%;
+  left: calc(80% + 70px); */
+  bottom: -45%;
+  left: calc(90% + 50px);
+}
+
+.books .book-right .book-item img{
+  transform: rotate(270deg) scale(1, -1);
+  position: absolute;
+  z-index: 5;
+  width: 500px;
+  /* bottom: -65%;
+  right: 50%; */
+  bottom: -70%;
+  right: 60%;
+}
+
+.books .book .book-item{
+  width: 40%;
+  text-align: center;
+  position: relative;
+  z-index: 50;
+}
+
+.books .book .book-item *{
+  position: relative;
+  z-index: 50;
+}
+
+.books .book .book-item h2{
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.more-books .more-book{
+  position: relative;
+  background-color: #fab0a036;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.more-books .more-book img{
+  position: absolute;
+  width: 350px;
+}
+
+.more-books .more-book img:first-of-type{
+  transform: rotate(100deg);
+  top: -15%;
+  right: 80%;
+}
+
+.more-books .more-book img:last-of-type{
+  left: 80%;
+  transform: rotate(30deg);
+  bottom: -30%;
+}
+
+footer .footer-image{
+  background: linear-gradient(to bottom, #dfe6e9 50%, black 50%);
+}
+
+/* Медиа-запросы */
+
+@media screen and (min-width: 480px){
+  .books .book-left .book-above:hover{
+    transform: translateX(-200%);
+  }
+  
+  .books .book-right .book-above:hover{
+    transform: translateX(200%);
+  }
+
+  .books .book .book-above:hover ~ .book-below{
+    transform: rotateZ(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .books .book .book-below{
+    display: none;
+  }
+
+  .books .book .book-above{
+    width: 45%;
+    transition: .3;
+  }
+
+  .books .book .book-above:hover{
+    transform: none;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .books-banner{
+    text-align: center;
+    justify-content: center;
+  }
+
+  .books-banner p{
+    width: 80%;
+  }
+
+  .books .book{
+    flex-direction: column;
+  }
+
+  .books .book .book-above{
+    margin-bottom: 40px;
+  }
+
+  .books .book-right{
+    flex-direction: column-reverse;
+  }
+
+  .books .book .book-item{
+    width: 80%;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .main-navigation {
+    height: 1000px;
+  }
+
+  .main-navigation .mobile-menu-button::before {
+    color: white;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .books .book .book-above{
+    width: 80%;
+  }
+}

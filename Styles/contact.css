@@ -1,0 +1,190 @@
+body{
+  background-color: #dfe6e9;
+}
+
+.forms{
+  position: relative;
+  background-color: white;
+  padding: 60px 20px 60px 20px;
+}
+
+.contact-image img{
+  position: absolute;
+  width: 25%;
+  left: 6%;
+  top: 30%;
+  z-index: 10;
+}
+
+.forms .form{
+  position: relative;
+  left: 35%;
+  width: 50%;
+  display: grid;
+  margin-top: 24px;
+  grid-template-areas: 
+  'header   header'
+  'firstName lastName'
+  'email     phone'
+  'message   message'
+  'buttom    buttom';
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.forms .form h2{
+    font-family: 'Italianno', cursive;
+    font-size: 80px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.forms .form input, .forms .form textarea{
+  color: #2d3436;
+  background: transparent;
+  outline: none;
+  border: none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: transparent transparent black transparent;
+  padding: 20px 0 15px 2px;
+}
+
+.forms .form textarea{
+  height: 80px;
+}
+
+.forms .form input:last-of-type{
+  border-style: solid;
+  border-color: black;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  width: 200px;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+.forms .form input::placeholder, .forms .form textarea::placeholder{
+  color: #2d3436;
+  font-family: 'Hina Mincho', serif;
+  font-size: 20px;
+}
+
+.forms .form input:not(:last-of-type):focus, .forms .form textarea:focus{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #2d3436;
+  border-radius: 10px;
+}
+
+.contacts{
+  width: 85%;
+  margin: 100px auto 100px auto;
+  display: grid;
+  grid-template-areas: 
+  'header header headerEmail headerEmail headerPhone headerPhone'
+  'header header email email phone phone'
+  'header header headerNetworks headerNetworks . .'
+  'header header instagram twitter . .';
+  grid-column-gap: 60px;
+  grid-row-gap: 20px;
+}
+
+.contacts h2{
+  font-family: 'Hina Mincho', serif;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.contacts p{
+  color: #2d3436;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-bottom-color: black;
+  padding: 20px 0 15px 2px;
+}
+
+.contacts a{
+  color: black;
+  text-decoration: none;
+  font-family: 'Hina Mincho', serif;
+  font-size: 24px;
+}
+
+footer .footer-image{
+  background: linear-gradient(to bottom, #dfe6e9 50%, black 50%);
+}
+
+/* Медиа-запросы */
+
+@media screen and (min-width: 480px){
+  .forms .form input:last-of-type:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+
+  .contacts a:hover{
+    opacity: 0.6;
+  }
+}
+
+@media all and (max-width: 960px) {
+  .contact-image{
+    background-color: white;
+    padding-top: 30px;
+  }
+
+  .contact-image img{
+    position: relative;
+    z-index: 10;
+    width: 60%;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 8%);
+  }
+  
+  .forms{
+    background-color: #dfe6e9;
+  }
+
+  .forms .form{
+    position: static;
+    width: 85%;
+    margin: 0 auto;
+    grid-template-areas: 
+    'header'
+    'firstName'
+    'lastName'
+    'email'
+    'phone'
+    'message'
+    'buttom';
+  }
+
+  .forms .form input:last-of-type{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .forms .form h2, .contacts h2{
+    text-align: center;
+  }
+
+  .contacts{
+    grid-template-areas: 
+    'header header'
+    'headerEmail headerEmail'
+    'email email'
+    'headerPhone headerPhone'
+    'phone phone'
+    'headerNetworks headerNetworks'
+    'instagram twitter';
+  }
+}

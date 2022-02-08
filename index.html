@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/Icon.PNG">
+    <title>Sava</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="main-navigation">
+            <ul class="left-menu">
+                <li><a href="Pages/books.html">Books</a></li>
+                <li><a href="Pages/sport.html">Sport</a></li>
+            </ul>
+            <div class="main-logo">
+                <a href="index.html">Sava<br><span>Talking About Mindfulness</span></a>
+            </div>
+            <ul class="right-menu">
+                <li><a href="Pages/about.html">About</a></li>
+                <li><a href="Pages/contact.html">Contact</a></li>
+            </ul>
+
+            <div class="mobile-menu" id="mobile-menu">
+                <button class="mobile-menu-button"></button>
+                <ul>
+                    <li><a href="Pages/books.html">Books</a></li>
+                    <li><a href="Pages/sport.html">Sport</a></li>
+                    <li><a href="Pages/about.html">About</a></li>
+                    <li><a href="Pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-banner">
+        <div class="banner-1">
+            <img src="Images/Flores-Main-Banner.png" alt="">
+        </div>
+        <div class="banner-2">
+            <img src="Images/Ora_Flor(1).png" alt="" class="banner-2-img-1">
+            <div class="banner-2-text">
+                <p>Sava<br><span>Talking About Mindfulness</span></p>
+                <hr>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi corporis ea quasi illum ullam iusto
+                    repudiandae ut ipsum nam, id quas sapiente voluptatibus minima officia!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, optio.</p>
+            </div>
+            <img src="Images/Ora_Flor_2_2x(1).png" alt="" class="banner-2-img-2">
+        </div>
+    </section>
+
+    <section class="banner-about banner-about-book">
+        <img src="Images/Ora_Flor_3_2x(1).png" alt="" id="photo-1">
+        <div class="banner-about-item">
+            <h2>Books.</h2>
+            <hr>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veniam voluptates voluptatem quis, unde
+                quidem libero eaque alias possimus quo quasi accusantium non explicabo enim nam. Odit, officiis
+                quibusdam!
+            </p>
+            <button><a href="Pages/books.html">More about..</a></button>
+        </div>
+        <div class="gallery-books">
+            <img src="Images/book-photo_3.jpg" alt="Photo" id="photo-2">
+            <img src="Images/book-photo_2.jpg" alt="Photo" id="photo-3">
+            <img src="Images/book-photo_1.jpg" alt="Photo" id="photo-4">
+        </div>
+    </section>
+
+    <section class="banner-about banner-about-sport">
+        <div class="banner-about-item">
+            <p><i>Lorem ipsum dolor sit.</i> Amet consectetur adipisicing elit. Error odit non impedit, quod magnam
+                debitis
+                laudantium.</p>
+            <h3>Sport.</h3>
+            <hr>
+            <ul>
+                <li>Lorem ipsum</li>
+                <li>Dolor sit</li>
+                <li>Amet consectetur</li>
+                <li>Adipisicing elit</li>
+                <li>Deleniti ipsa</li>
+                <li>Voluptatem sed</li>
+                <li>Ratione saepe</li>
+            </ul>
+            <button><a href="Pages/sport.html">More about..</a></button>
+        </div>
+
+        <div class="slider slider-5">
+            <div>
+                <img src="Images/main-sport-1.jpg" alt="Photo" class="slide">
+                <img src="Images/main-sport-2.jpg" alt="Photo" class="slide">
+                <img src="Images/main-sport-3.jpg" alt="Photo" class="slide">
+                <img src="Images/main-sport-4.jpg" alt="Photo" class="slide">
+                <img src="Images/main-sport-5.jpg" alt="Photo" class="slide">
+                <img src="Images/main-sport-6.jpg" alt="Photo" class="slide">
+                <img src="Images/main-sport-7.jpg" alt="Photo" class="slide">
+                <img src="Images/main-sport-8.jpg" alt="Photo" class="slide">
+
+                <div class="slider-button">
+                    <button class="previous" onclick="minusSlide(0)">&#10229;</button>
+                    <button class="next" onclick="plusSlide(0)">&#10230;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-about-us">
+        <div class="more-about-us">
+            <img src="Images/talleres-flor-2.png" alt="Flor">
+            <h2>More about us.</h2>
+            <hr>
+            <h5>Lorem ipsum dolor sit amet.</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi est non exercitationem totam doloribus
+                commodi, quos nobis iure, veritatis enim unde ab, molestiae ducimus! Quidem?</p>
+            <button><a href="Pages/about.html">More about..</a></button>
+            <img src="Images/talleres-flor-1.png" alt="Flor">
+        </div>
+    </section>
+
+    <section class="photo-banner-about-us">
+        <img src="Images/banner-about-us.jpg" alt="Photo">
+    </section>
+
+    <section class="banner-contact">
+        <div class="banner-contact-item">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eius ipsum sint est provident
+                    placeat. Ducimus quasi delectus eum non. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Officiis, molestias!</p>
+        </div>
+        <div class="banner-contact-info">
+            <h4>Contact</h4>
+            <a href="tel:+23923929210" title="Phone" style="grid-area: phone;">+2 392 3929 210</a>
+            <a href="mailto:sava@indfulness.com" title="Email" style="grid-area: email;">sava@indfulness.com</a>
+            <button><a href="Pages/contact.html">Contact us</a></button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-image">
+            <img src="Images/footer-flower_2x.png" alt="">
+        </div>
+        <div class="footer-text">
+            <div class="main-logo" style="grid-area: logo;">
+                <a href="index.html">Sava<br><span>Talking About Mindfulness</span></a>
+            </div>
+            <p style="grid-area: items_1;">Navigation.</p>
+            <p style="grid-area: items_2;">Social Networks.</p>
+            <ul class="footer-menu" style="grid-area: menu_1;">
+                <li><a href="Pages/books.html">Books</a></li>
+                <li><a href="Pages/sport.html">Sport</a></li>
+            </ul>
+            <ul class="footer-menu" style="grid-area: menu_2;">
+                <li><a href="Pages/about.html">About</a></li>
+                <li><a href="Pages/contact.html">Contact</a></li>
+            </ul>
+            <ul class="footer-menu" style="grid-area: networks;">
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
